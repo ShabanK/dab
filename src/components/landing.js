@@ -1,4 +1,5 @@
 import React from "react";
+import Tooltip from "@material-ui/core/Tooltip";
 import {
   Grid,
   Paper,
@@ -24,14 +25,17 @@ const Index = () => {
           </Paper>
         </Grid>
         <Grid item style={{ marginTop: "15em" }}>
-          <Button
-            style={{ height: "5em", width: "30em" }}
-            color="primary"
-            variant="contained"
-            size="large"
-          >
-            Login
-          </Button>
+          <Tooltip title="Login with your account">
+            <Button
+              href="/login"
+              style={{ height: "5em", width: "30em" }}
+              color="primary"
+              variant="contained"
+              size="large"
+            >
+              Login
+            </Button>
+          </Tooltip>
         </Grid>
         <Grid
           container
@@ -41,14 +45,17 @@ const Index = () => {
           item
           style={{ marginTop: "20px" }}
         >
-          <Button
-            style={{ height: "5em", width: "30em" }}
-            color="primary"
-            variant="contained"
-            size="large"
-          >
-            Sign up
-          </Button>
+          <Tooltip title="Register your account">
+            <Button
+              href="/signup"
+              style={{ height: "5em", width: "30em" }}
+              color="primary"
+              variant="contained"
+              size="large"
+            >
+              Sign up
+            </Button>
+          </Tooltip>
         </Grid>
       </Grid>
     </div>
